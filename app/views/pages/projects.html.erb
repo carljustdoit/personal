@@ -1,0 +1,40 @@
+<%= render 'layouts/header' %>
+
+<hr class="tp-divider">
+
+<!-- Begin Body -->
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+          <div class="navbar navbar-default" id="sidebar">
+              <ul class="nav" id="mynav">
+                  <li><a href="#c1" class="list-group-item"> Content 1 </a></li>
+                  <li><a href="#c2" class="list-group-item">Content 2 </a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-md-9" id="mycontent" data-spy="scroll" data-target="#sidebar" data-offset="0">
+          	<h2 id="c1" class="">Content 1</h2>
+							At Bootply we attempt to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. 
+          <hr class="col-md-12">
+            <h2 id="c2" class="">Content 2</h2>
+							Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+              sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione
+          <hr class="col-md-12">
+      </div>
+  </div>
+
+  <%= render 'layouts/footer' %>
+
+</div>
+
+
+
+<script type="text/javascript">
+	$('#sidebar').affix({
+	      offset: {
+	        top: 200
+	      }
+	});	
+</script>
