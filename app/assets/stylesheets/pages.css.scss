@@ -91,7 +91,7 @@ body {
 }
 
 .tp-divider {
-  margin: 50px 0; /* Space out the Bootstrap <hr> more */
+  margin: 35px 0; /* Space out the Bootstrap <hr> more */
 }
 
 .featurette {
@@ -162,7 +162,7 @@ body {
 	float: none;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	border-radius: 8px; /* future proofing */
+	border-radius: 0 8 8 8px; /* future proofing */
 	-khtml-border-radius: 10px; /* for old Konqueror browsers */
 
   padding-left: 65px;
@@ -231,5 +231,42 @@ hr.faded {
       rgb(255,255,255) 100%
   );
 }
+
+.nav.nav-tabs {
+	border-color: #ecf0f1;
+	//background: black;
+	border-radius: 8px;
+	border: 0.0001px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: black;
+  cursor: default;
+  background-color: white;
+  border: 0px solid #ddd;
+  border-bottom-color: transparent;
+  box-shadow: 0 1px #FFFFFF, 0 0px 1px rgba(34, 25, 25, 0.4);
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 1px;
+}
+
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.428571429;
+  border: 0.0001px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+
 
 
