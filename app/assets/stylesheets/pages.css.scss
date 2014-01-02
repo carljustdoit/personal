@@ -157,20 +157,20 @@ body {
 	//width:	800px;
 	//border:	1px solid gray;
 	background-color: white;
-	opacity: 0.8;
+	opacity: 1.0;
 
 	float: none;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	border-radius: 4px; /* future proofing */
+	border-radius: 8px; /* future proofing */
 	-khtml-border-radius: 10px; /* for old Konqueror browsers */
 
-  padding-left: 60px;
+  padding-left: 65px;
   padding-right: 60px;
   padding-top: 20px;
   padding-bottom: 50px;
 
-  margin: 0 0 25 0px;
+  margin: 0 0 15 0px;
 	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
 
 }
