@@ -1,40 +1,37 @@
 <%= render 'layouts/header' %>
 
-<hr class="tp-divider">
-
-<!-- Begin Body -->
 <div class="container">
-  <div class="row">
-      <div class="col-md-2">
-          <div class="navbar navbar-default" id="sidebar">
-              <ul class="nav" id="mynav">
-                  <li><a href="#c1" class="list-group-item"> Content 1 </a></li>
-                  <li><a href="#c2" class="list-group-item">Content 2 </a></li>
-              </ul>
-          </div>
-      </div>
-      <div class="col-md-9" id="mycontent" data-spy="scroll" data-target="#sidebar" data-offset="0">
-          	<h2 id="c1" class="">Content 1</h2>
-							At Bootply we attempt to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. 
-          <hr class="col-md-12">
-            <h2 id="c2" class="">Content 2</h2>
-							Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-              sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione
-          <hr class="col-md-12">
-      </div>
-  </div>
+  <hr class="tp-divider">
 
-  <%= render 'layouts/footer' %>
+	<div class = "cl-box">
+		<p>
+			<h2>Business Opportunity</h2>
+
+			<p>Our product is a wearable, non-invasive headband that provides early alert to epilepsy patients shortly before seizures so that the risks of losing conscious control can be greatly mediated. Our service bundle enables better diagnosis, prevention and treatment of epileptic seizures through real-time brainwave tracking and analysis. </p>
+
+			<img src="http://images2.fanpop.com/images/photos/8100000/Christmas-Tree-Wallpaper-christmas-8142630-1024-768.jpg">
+
+			<h2> Target Market </h2>
+
+			<h3> Customer Profile </h3>
+			<p>Our customer has epilepsy, and has seizures on a regular basis - at least once every 6 months, but is not so extreme that she is willing to undergo surgery (for ex: twice a day seizures). She is interested in detecting these seizures ahead of time to prevent injury to herself and others. </p>
+			 
+			Segmentation
+			There are 65 million epileptics in the world, and 2.3 million in the United states. They often suffer from chronic seizures throughout their entire life. Currently this results in $15.5 billion in annual medical costs in the United States. There are 730,000 Americans living with chronic seizures, and these make up our initial target market -- as they are the ones who have the strongest burning need for our products. 
+
+			Globally, we will enter the China market by the end of year 5. There are 9 million epilepsy patients in China, 3 million of which suffer from chronic seizures. We will target these 3 million patients as our main users during our global expansion stage.
+
+			Value Proposition
+
+			Burning Need
+			Epilepsy patients are facing severe threats due to the irregular occurrences of epileptic seizures. They could easily get severely injured or even lose their lives from accidental choking as a result of giving up bodily control after losing consciousness. Chronic epilepsy also greatly impacts the quality of life of patients due to its unpredictable onsets. 
+
+			Although current seizure detectors are helpful in sending out alert messages to family members and healthcare providers, the need of non-invasively predicting seizures within a short timeframe is hardly addressed at all. Without implanting a device into the brain, non-invasive prediction is tremendously critical because it allows patients themselves to live a normal life and make proper preparations before seizures (e.g. locate a safe place, leave meaningful information for assistance, etc). 
+		</p>
+	</div> 
 
 </div>
 
+<%= render 'layouts/footer' %>
 
-
-<script type="text/javascript">
-	$('#sidebar').affix({
-	      offset: {
-	        top: 200
-	      }
-	});	
-</script>
+</div>
