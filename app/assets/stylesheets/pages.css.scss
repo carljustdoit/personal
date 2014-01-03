@@ -51,11 +51,11 @@ body {
   background-color:#bbb;
 }
 .carousel img {
-  position: absolute;
+  //position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 600px;
+  //height: 600px;
 }
 
 
@@ -91,7 +91,7 @@ body {
 }
 
 .tp-divider {
-  margin: 35px 0; /* Space out the Bootstrap <hr> more */
+  margin: 36px 0; /* Space out the Bootstrap <hr> more */
 }
 
 .featurette {
@@ -162,7 +162,7 @@ body {
 	float: none;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	border-radius: 0 8 8 8px; /* future proofing */
+	border-radius: 8 8 8 8px; /* future proofing */
 	-khtml-border-radius: 10px; /* for old Konqueror browsers */
 
   padding-left: 65px;
@@ -178,8 +178,8 @@ body {
 .cl-box img {
 	padding-top:25px;
 	padding-bottom:25px;
-	padding-right:50px;
-	padding-left:50px;
+	padding-right:0px;
+	padding-left:0px;
 
 	width: 100%;
 	height: auto;
@@ -193,13 +193,13 @@ body {
 }
 
 .cl-box h2 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'PT Serif', sans-serif;
 	font-weight: bold;
 }
 
 .cl-box p {
 	font-size: 12pt;
-	font-family: 'PT Serif';
+	font-family: 'PT Serif', sans-serif;
 }
 
 /* ==========================================================================
@@ -232,41 +232,12 @@ hr.faded {
   );
 }
 
-.nav.nav-tabs {
-	border-color: #ecf0f1;
-	//background: black;
-	border-radius: 8px;
-	border: 0.0001px;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: black;
-  cursor: default;
-  background-color: white;
-  border: 0px solid #ddd;
-  border-bottom-color: transparent;
-  box-shadow: 0 1px #FFFFFF, 0 0px 1px rgba(34, 25, 25, 0.4);
-}
-
-.nav-tabs {
-  border-bottom: 1px solid #ddd;
-}
-.nav-tabs > li {
-  float: left;
-  margin-bottom: 1px;
-}
-
-.nav-tabs > li > a {
-  margin-right: 2px;
-  line-height: 1.428571429;
-  border: 0.0001px solid transparent;
-  border-radius: 4px 4px 0 0;
-}
-.nav-tabs > li > a:hover {
-  border-color: #eee #eee #ddd;
-}
+img.blur { 
+	-webkit-filter: blur(3px); 
+	-moz-filter: blur(3px); 
+	-o-filter: blur(3px); 
+	-ms-filter: blur(3px); 
+	filter: blur(3px); }
 
 
 
