@@ -82,10 +82,6 @@ body {
   line-height: 1.4;
 }
 
-.carousel img .project-pg {
-	
-}
-
 
 
 /* MARKETING CONTENT
@@ -175,8 +171,7 @@ body {
 	TEXT BOX
 	========================================================================== */
 .cl-box{
-	//width:	800px;
-	//border:	1px solid gray;
+
 	background-color: white;
 	opacity: 1.0;
 
@@ -186,8 +181,8 @@ body {
 	border-radius: 8 8 8 8px; /* future proofing */
 	-khtml-border-radius: 10px; /* for old Konqueror browsers */
 
-  padding-left: 65px;
-  padding-right: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 50px;
 
@@ -199,8 +194,8 @@ body {
 .cl-box img {
 	padding-top:25px;
 	padding-bottom:25px;
-	padding-right:0px;
-	padding-left:0px;
+	padding-right:25px;
+	padding-left:25px;
 
 	width: 100%;
 	height: auto;
@@ -213,9 +208,8 @@ body {
   border-radius: 8px;
 }
 
-.cl-box h2 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: none;
+.project-header {
+	font-family: 'Lobster', sans-serif;
 	font-size: 24px;
 	color: gray;
 }
@@ -262,6 +256,24 @@ img.blur {
 	-ms-filter: blur(3px); 
 	filter: blur(3px); 
 }
+// Projects Page
+.modal-dialog {
+  padding: 0;
 
+}
+
+.modal-body {
+  //max-height: 800px;
+  padding: 1%;
+}
+
+.modal-footer {
+}
+
+.thumbnail {
+	margin-bottom:5px;
+	padding: 0px;
+  background: rgba(0,0,0,0.4);
+}
 
 
