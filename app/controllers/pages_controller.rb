@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def projects
   end
+
+  def visualreal
+  end
 end
