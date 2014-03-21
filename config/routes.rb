@@ -3,6 +3,7 @@ Personal::Application.routes.draw do
   get "about" => "pages#about"
   get "projects" => "pages#projects"
   get "projects/visualreal" => "pages#visualreal"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -294,6 +294,11 @@ img.blur {
 	//-webkit-filter: blur(2px);
 }
 
+#gallery figcaption {
+  opacity: 0.5;
+  position: absolute;
+}
+
 .hovicon.effect-1 {
     background: rgba(255, 255, 255, 0.1);
     -webkit-transition: background 0.2s, color 0.2s;
