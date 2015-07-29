@@ -69,6 +69,7 @@ window.snowplow('newTracker', 'cf', 'dt0auv51hsvhi.cloudfront.net', { // Initial
   cookieDomain: '{{MY-COOKIE-DOMAIN}}'
 });
 
+window.snowplow('enableActivityTracking', 30, 10);
 window.snowplow('trackPageView');
 </script>
 <!-- Snowplow stops plowing -->
