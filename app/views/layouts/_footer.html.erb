@@ -15,3 +15,55 @@
 </footer>
 
 </div>
+
+<!--Mixpanel-->
+<script type="text/javascript">
+(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("7d0e7deeaf06405f4857138a863f0348");
+
+</script>
+<!-- end Mixpanel -->
+
+<script type="text/javascript">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d1fc8wv8zag5ca.cloudfront.net/2.5.1/sp.js","tracker"));
+
+window.tracker('newTracker', 'cf', 'd6c1658ugabim.cloudfront.net', {
+  appId: 'cl1',
+  cookieDomain: null,
+  cookieName:'_cl1_'
+});
+
+// Mouse Click Events
+$(document).click(function(event){
+	var target = $(event.target);
+	if (target.hasClass('carousel-control')) {
+		if (target.hasClass('right')) {
+			window.tracker('trackStructEvent','click','crousel-navigation','right','');
+			mixpanel.track("Right Carousel Click");
+		}
+		if (target.hasClass('left')) {
+			window.tracker('trackStructEvent','click','crousel-navigation','left','');
+			mixpanel.track("Left Carousel Click");
+		}
+	}
+});
+
+// Keyboard Events
+$(document).keypress(function(event){
+	var target = $(event.target);
+	if (target.hasClass('input'))
+		window.tracker('trackStructEvent','input','text-input', target.val(),'');
+});
+
+
+
+window.tracker('enableActivityTracking', 30, 30);
+window.tracker('trackPageView');
+
+</script>
+
+
